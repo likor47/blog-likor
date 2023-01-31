@@ -1,0 +1,107 @@
+@import "var";
+
+.modal {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    max-width: 90vw;
+}
+.modal__dark {
+    background: #1c1c1c;
+}
+.file_label {
+    display: flex;
+    cursor: pointer;
+    height: 40px;
+    width: 91%;
+    margin: 10px 3%;
+    align-items: center;
+    justify-content: center;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+    border-color: white;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+}
+.title_input {
+    display: block;
+    font-size:1em;
+    padding:4px 2px;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+    border-color: white;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    width:90%;
+    margin: 10px 3%;
+    font-family: $main_font;
+}
+.file_input {
+    display: none;
+}
+.body_input {
+    margin: 5px 3%;
+    width: 90%;
+    height: 100px;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+    border-color: white;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    font-family: $main_font;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding:4px 2px;
+    transition: background-color 0.2s ease 0s;
+    resize: vertical;
+    max-height: 300px;
+    min-height: 50px;
+}
+.create_btn {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: $btn_col;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: $main_font;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin-left: 3%;
+    height: 36.75px;
+    padding: calc(.875rem - 6px) calc(1.5rem - 7px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    &:hover,
+    &:focus {
+        background-color: $btn_col;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    }
+}
+.title_input__dark {
+    background-color: #3d3d40;
+    color: #e3e3e1;
+    border-color: transparent;
+}

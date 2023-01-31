@@ -1,0 +1,108 @@
+@import "var";
+
+.report__title {
+    text-align: center;
+    font-family: "Franklin Gothic Medium";
+    font-size: 22px ;
+    margin-bottom: 15px;
+}
+.report__body {
+    border: 2px solid #1c1c1c;
+    border-radius: 7px;
+    padding: 5px;
+}
+.report__element {
+    border-bottom: 2px solid #1c1c1c;
+    padding: 3px;
+    margin-top: 7px;
+    &:last-of-type {
+        border-bottom: 0px;
+    }
+}
+
+.report__container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Franklin Gothic Medium";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.report__container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.report__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+}
+
+.report__container:hover input ~ .report__checkmark {
+    background-color: #ccc;
+}
+
+.report__container input:checked ~ .report__checkmark {
+    background-color: $btn_col;
+}
+
+
+.report__container input:checked ~ .report__checkmark:after {
+    display: block;
+}
+
+.report__container .report__checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.report__spoiler {
+    font-family: "Franklin Gothic Medium";
+    margin: 5px;
+}
+
+.report__button {
+    margin: 10px auto auto auto;
+    padding: 5px 15px;
+    color: whitesmoke;
+    font-size: 17px;
+    font-family: "Franklin Gothic Medium";
+    background: $btn_col;
+    border: 1px solid $btn_col;
+    cursor: pointer;
+    text-decoration-line: none;
+    &:hover {
+        background: $hov_col;
+    }
+}
+
+.report__success {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium";
+    color: #B22222;
+}

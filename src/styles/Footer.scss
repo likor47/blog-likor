@@ -1,0 +1,80 @@
+.footer {
+    display: flex;
+    width: 100%;
+    height: 95px;
+    background-color: #1c1c1c;
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", serif;
+    margin: auto 0 0 0;
+    align-items: center;
+    justify-content: center;
+}
+.footer_dark {
+    background-color: #0E1111;
+}
+.footer__widget {
+    display: flex;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px 5px 5px 20px;
+    align-items: center;
+}
+.left_panel {
+    margin: 4px;
+}
+.right_panel {
+    margin: 4px 4px 4px 20px;
+    border-left: 1px solid whitesmoke;
+    padding-left: 20px;
+}
+.temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+.weather_image {
+    max-height: 40px;
+    max-width: 40px;
+    width: 40px;
+    height: 40px;
+    animation: weather-icon-move 2.5s ease-in-out alternate infinite;
+}
+.weather_info {
+    font-size: 1.2em;
+}
+.weather_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    color: whitesmoke;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    &:hover {
+        background-color: #383838;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        height: 140px;
+        flex-direction: column;
+    }
+}
+@keyframes weather-icon-move {
+    0% { 
+        transform: translateY(5px); 
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}

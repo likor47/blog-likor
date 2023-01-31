@@ -1,0 +1,66 @@
+@import "var";
+
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.auth__window {
+    display: block;
+    width: 600px;
+    height: 400px;
+    border: 2px solid #505050;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.auth__dark {
+    background: #0E1111;
+}
+.auth__h {
+    text-align: center;
+    margin-top: 10%;
+    font-family: "Franklin Gothic Medium", serif;
+    color: #1c1c1c;
+}
+.auth__h_dark {
+    color: #e3e3e1;
+}
+.auth__form {
+    display: block;
+    margin-bottom: auto;
+    margin-top: 10%;
+    width: 100%;
+}
+.auth__input {
+    display: block;
+    font-size:14px;
+    padding:4px 2px;
+    border:solid 1px #505050;
+    background-color: #d4d4d2;
+    border-radius: 4px;
+    width:70%;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: "Franklin Gothic Medium";
+}
+.auth__button {
+    padding: 5px 15px;
+    margin-top: 15px;
+    margin-left: 75%;
+    color: whitesmoke;
+    font-size: 17px;
+    font-family: "Franklin Gothic Medium";
+    background:$btn_col;
+    border: 1px solid $btn_col;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration-line: none;
+    transition-duration: 0.3s;
+    &:hover {
+        background-color: $hov_col;
+    }
+}

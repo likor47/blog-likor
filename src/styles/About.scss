@@ -1,0 +1,214 @@
+@import "var";
+
+.about {
+    display: block;
+    margin: 60px 20px 20px 20px;
+    align-items: center;
+    justify-content: center;
+    min-width: 1600px;
+}
+.about__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid $btn_col;
+    border-radius: 14px;
+    background: $btn_col;
+    color: whitesmoke;
+    width: 30%;
+    font-family: "Franklin Gothic Medium", serif;
+}
+.about__title_dark {
+
+}
+.about__story {
+    display: block;
+    text-align: center;
+    margin: 10% auto auto auto;
+    font-family: "Franklin Gothic Medium", serif;
+    border: 2px dashed #1c1c1c;
+    width: 30%;
+    padding: 10px;
+    border-radius: 8px;
+}
+.about__story_dark {
+    border: 2px dashed whitesmoke;
+    color: whitesmoke;
+}
+.about__separator {
+    height: 10px;
+
+}
+@media (max-width: 1200px) {
+    .about {
+        min-width: 800px;
+    }
+    .about__story {
+        width: 50%;
+    }
+}
+@media (max-width: 992px) {
+    .about {
+        min-width: 600px;
+    }
+    .about__story {
+        width: 70%;
+    }
+}
+@media (max-width: 767px) {
+    .about {
+        min-width: 300px;
+    }
+    .about__story {
+        width: 90%;
+    }
+    .about__title {
+        width: 50%;
+    }
+}
+.bird {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    will-change: background-position;
+
+    animation-name: fly-cycle;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+
+&--one {
+     animation-duration: 1s;
+     animation-delay: -0.5s;
+ }
+
+&--two {
+     animation-duration: 0.9s;
+     animation-delay: -0.75s;
+ }
+
+&--three {
+     animation-duration: 1.25s;
+     animation-delay: -0.25s;
+ }
+
+&--four {
+     animation-duration: 1.1s;
+     animation-delay: -0.5s;
+ }
+
+}
+
+.bird-container {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    transform: scale(0) translateX(-10vw);
+    will-change: transform;
+    animation-name: fly-right-one;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+&--one {
+     animation-duration: 15s;
+     animation-delay: 0s;
+ }
+
+&--two {
+     animation-duration: 16s;
+     animation-delay: 1s;
+ }
+
+&--three {
+     animation-duration: 14.6s;
+     animation-delay: 9.5s;
+ }
+
+&--four {
+     animation-duration: 16s;
+     animation-delay: 10.25s;
+ }
+
+}
+
+@keyframes fly-cycle {
+
+    100% {
+        background-position: -900px 0;
+    }
+
+}
+
+@keyframes fly-right-one {
+
+    0% {
+        transform: scale(0.3) translateX(-10vw);
+    }
+
+    10% {
+        transform: translateY(2vh) translateX(10vw) scale(0.4);
+    }
+
+    20% {
+        transform: translateY(0vh) translateX(30vw) scale(0.5);
+    }
+
+    30% {
+        transform: translateY(4vh) translateX(50vw) scale(0.6);
+    }
+
+    40% {
+        transform: translateY(2vh) translateX(70vw) scale(0.6);
+    }
+
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.6);
+    }
+
+    60% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+    }
+
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+    }
+
+}
+
+@keyframes fly-right-two {
+
+    0% {
+        transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+    }
+
+    10% {
+        transform: translateY(0vh) translateX(10vw) scale(0.4);
+    }
+
+    20% {
+        transform: translateY(-4vh) translateX(30vw) scale(0.6);
+    }
+
+    30% {
+        transform: translateY(1vh) translateX(50vw) scale(0.45);
+    }
+
+    40% {
+        transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+    }
+
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.45);
+    }
+
+    51% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+
+}

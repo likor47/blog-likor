@@ -1,0 +1,63 @@
+{
+  "name": "react-likor",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.16",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.3",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@types/react-redux": "^7.1.24",
+    "axios": "^1.2.0",
+    "draft-js": "^0.11.7",
+    "json-server": "^0.17.1",
+    "node-sass": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-highlight-words": "^0.18.0",
+    "react-highlighter": "^0.4.3",
+    "react-hooks-global-state": "^2.1.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "5.0.1",
+    "react-simple-spoiler": "^0.1.4",
+    "react-transition-group": "^4.4.5",
+    "typescript": "^4.9.3",
+    "web-vitals": "^2.1.4",
+    "webfontloader": "^1.6.28"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/draft-js": "^0.11.10"
+  }
+}
