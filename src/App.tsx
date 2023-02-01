@@ -7,6 +7,7 @@ import AuthPage from "./components/Pages/AuthPage";
 import PostPage from "./components/Pages/PostPage";
 import SecretPage from "./components/Pages/SecretPage";
 import PremiumPage from "./components/Pages/PremiumPage";
+import PaymentPage from "./components/Pages/PaymentPage";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                   <Route path="/auth" element={<AuthPage />} />
                   <Route path="/secret" element={<SecretPage />} />
                   <Route path="/premium" element={<PremiumPage />} />
+                  <Route path="/payment" element={<PaymentPage />} />
                   <Route path="/posts/:id" element={<PostPage />} />
               </Routes>
 

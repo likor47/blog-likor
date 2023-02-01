@@ -1,0 +1,54 @@
+@import "var";
+
+.payment__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e3e1;
+  margin: auto;
+  height: 500px;
+  width: 700px;
+  border-radius: 2.5%;
+  font-family: $main_font;
+  h1 {
+
+  }
+  .payment__icon {
+    margin: 3px;
+    i {
+      margin: 3px 10px;
+      transform: scale(1.5);
+    }
+  }
+  form {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    input {
+      width: 90%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: flex-end;
+      input {
+        width: 80%;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
