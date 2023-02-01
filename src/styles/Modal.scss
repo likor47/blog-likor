@@ -96,7 +96,7 @@
     width: auto;
     &:hover,
     &:focus {
-        background-color: $btn_col;
+        background-color: $hov_col;
         box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     }
 }
