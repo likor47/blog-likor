@@ -11,8 +11,18 @@
   width: 700px;
   border-radius: 2.5%;
   font-family: $main_font;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   h1 {
-
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-color: $btn_col;
+    margin-bottom: 5px;
+    padding: 2px;
+    width: 20%;
+    height: 1.1em;
+    border-radius: 6px;
   }
   .payment__icon {
     margin: 3px;

@@ -4,6 +4,7 @@ import '../../styles/General.scss'
 import '../../styles/Premium.scss'
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import {useNavigate} from "react-router-dom";
 
 
 const PremiumPage: FC = () => {
@@ -11,6 +12,8 @@ const PremiumPage: FC = () => {
     const [darkTheme] = useGlobalState('darkTheme')
 
     let mode = localStorage.getItem('theme')
+
+    const navigate = useNavigate()
 
     return (
         <div className={mode === 'false' ? "wrapper" : "wrapper dark"}>
@@ -35,7 +38,7 @@ const PremiumPage: FC = () => {
                             <h3>Advance</h3>
                             <p> - 200 додаткових символів для ваших постів</p>
                             <p> - Більше унікальних можливостей для кастомізації постів</p>
-                            <a href="https://www.paypal.com/">120 грн/міс</a>
+                            <a onClick={() => navigate('/payment')}>120 грн/міс</a>
                         </div>
                     </div>
                 </div>
@@ -48,7 +51,7 @@ const PremiumPage: FC = () => {
                             <p> - 400 додаткових символів для ваших постів</p>
                             <p> - Ще більше унікальних можливостей для кастомізації постів</p>
                             <p> - Бейджик "Преміум" біля вашого імені</p>
-                            <a href="https://www.paypal.com/">250 грн/міс</a>
+                            <a onClick={() => navigate('/payment')}>250 грн/міс</a>
                         </div>
                     </div>
                 </div>

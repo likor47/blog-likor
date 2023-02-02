@@ -22,7 +22,7 @@ const PaymentPage: FC = (): JSX.Element => {
                     </div>
                     <form>
                         <label htmlFor="cname">Ім'я на карті</label>
-                        <input type="text" id="cname" name="cardname" placeholder="John More Doe"/>
+                        <input type="text" id="cname" name="cardname" placeholder="Ім'я Прізвище"/>
                         <label htmlFor="ccnum">Номер кредитної карти</label>
                         <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"/>
                         <div>
