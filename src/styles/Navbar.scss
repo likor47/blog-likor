@@ -128,11 +128,12 @@
       margin-right: 10px;
     }
 
-    .navbar__search_container {
-        margin-left: auto;
-        margin-bottom: 5px;
-        display: flex;
-
+.navbar__search_container {
+      margin-left: auto;
+      margin-bottom: 5px;
+      display: flex;
+      width: 20%;
+  min-width: 250px;
     }
 
  .navbar__search {
@@ -141,6 +142,7 @@
    border: none;
    margin-top: 8px;
    font-size: 17px;
+   width: 60%;
    border-radius: 15px;
    outline: none;
    &:focus {
@@ -271,7 +273,7 @@
     }
 
     #menu-toggle:checked + .navbar__menu_container .navbar__menu_button::before {
-        margin-top: 0px;
+        margin-top: 0;
         transform: rotate(405deg);
     }
 
