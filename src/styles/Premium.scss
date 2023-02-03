@@ -43,7 +43,7 @@ body .premium__container .premium__card .box {
     background: #2a2b2f;
     border-radius: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
     transition: 0.5s;
@@ -66,6 +66,14 @@ body .premium__container .premium__card .box {
 body .premium__container .premium__card .box .content {
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    div {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 body .premium__container .premium__card .box .content h2 {

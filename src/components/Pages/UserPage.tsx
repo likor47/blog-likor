@@ -66,7 +66,7 @@ const UserPage: FC = () => {
                         </div>
                         <h1 className="user__name">Недавні пости</h1>
                             {isLoading && <Loader/>}
-                            {error && <h1 className="post__error" style={{width: '70%'}}>Сталась помилка...</h1>}
+                            {error && <h1 className="post__error" >Сталась помилка...</h1>}
                             <div className="user__posts">
                                 {posts && posts.map(post => <div onClick={() => navigate(`/posts/${post.id}`)} className="user__post" key={post.id}>{post.title}</div>)}
                             </div>
