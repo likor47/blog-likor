@@ -1,9 +1,10 @@
-body {
-    overflow-x: hidden
-}
 * {
     margin: 0;
     -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden
 }
 .wrapper {
     display: flex;
@@ -53,8 +54,8 @@ body {
 }
 .status_minus {
     position: absolute;
-    font-size: 80px;
+    font-size: 70px;
     color: #1c1c1c;
-    bottom: -75%;
-    right: 18%;
+    bottom: -120%;
+    right: 7%;
 }

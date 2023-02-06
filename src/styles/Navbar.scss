@@ -43,7 +43,7 @@
    margin-left: 0px;
  }
  .navbar__btn {
-   min-width: 100px;
+   min-width: 115px;
    background-clip: padding-box;
    background-color: $btn_col;
    border: 1px solid transparent;
@@ -60,7 +60,7 @@
    line-height: 1.25;
    margin: 0;
    min-height: 2rem;
-   padding: calc(.875rem - 6px) calc(1.5rem - 7px);
+   padding: calc(.875rem - 6px) calc(1.5rem - 8px);
    position: relative;
    text-decoration: none;
    transition: all 250ms;
@@ -88,6 +88,12 @@
    }
    .navbar__btn_comment2 {
      display: none;
+   }
+   i {
+     position: relative;
+     font-size: 12px;
+     bottom: -3px;
+     margin-right: 2px;
    }
 
  }
@@ -133,7 +139,7 @@
       margin-bottom: 5px;
       display: flex;
       width: 20%;
-  min-width: 250px;
+      min-width: 220px;
     }
 
  .navbar__search {
@@ -182,7 +188,6 @@
 
     .navbar {
         height: 50px;
-        width: 100%;
         display: flex;
         align-items: center;
         position: sticky;
@@ -205,9 +210,9 @@
         position: absolute;
         top: 0;
         margin-top: 50px;
-        left: -40px;
         flex-direction: column;
-        width: 100%;
+        width: calc(100% + 40px);
+        left: -40px;
         justify-content: center;
         align-items: center;
     }

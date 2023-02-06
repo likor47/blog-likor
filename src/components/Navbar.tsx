@@ -31,8 +31,26 @@ const Navbar = ({search, setSearch} : any) => {
 
     return (
         <div className={mode === 'false' ? "navbar" : "navbar navbar__dark"}>
-            <Link className="navbar__btn" style={{marginRight: 6}} to="/">Головна</Link>
-            <Link className="navbar__btn" style={{cursor: "help"}} to="/about"> <span className="navbar__btn_comment1">Про сайт</span><span className="navbar__btn_comment2">Довідка</span></Link>
+            <Link
+                className="navbar__btn"
+                style={{marginRight: 6}}
+                to="/"
+            ><i className="fa fa-home" aria-hidden="true"></i>
+                Головна
+            </Link>
+            <Link
+                className="navbar__btn"
+                style={{cursor: "help"}}
+                to="/about"
+            >
+                <i className="fa fa-question-circle-o" aria-hidden="true"></i>
+                <span className="navbar__btn_comment1">
+                    Про сайт
+                </span>
+                <span className="navbar__btn_comment2">
+                    Довідка
+                </span>
+            </Link>
             <button className={mode === 'true' ? "navbar__dark_mode" : "navbar__dark_mode navbar__dark_mode_dark"} onClick={darkThemeHandler}></button>
 
             <div className="navbar__search_container">
@@ -51,6 +69,7 @@ const Navbar = ({search, setSearch} : any) => {
             </div>
             <div className="navbar__links">
                 <button className="navbar__btn" onClick={openAuthPage}>
+                    <i className="fa fa-sign-out" aria-hidden="true"></i>
                     Вийти
                 </button>
             </div>
