@@ -21,7 +21,7 @@
 .auth__h {
     text-align: center;
     margin-top: 10%;
-    font-family: "Franklin Gothic Medium", serif;
+    font-family: $main_font;
     color: #1c1c1c;
 }
 .auth__h_dark {
@@ -41,11 +41,11 @@
     background-color: #d4d4d2;
     border-radius: 4px;
     width:70%;
-    height: 20px;
+    height: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    font-family: "Franklin Gothic Medium";
+    font-family: $main_font;
 }
 .auth__button {
     padding: 5px 15px;
@@ -53,7 +53,7 @@
     margin-left: 75%;
     color: whitesmoke;
     font-size: 17px;
-    font-family: "Franklin Gothic Medium";
+    font-family: $main_font;
     background:$btn_col;
     border: 1px solid $btn_col;
     border-radius: 4px;

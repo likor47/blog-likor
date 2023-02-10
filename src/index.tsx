@@ -17,7 +17,7 @@ root.render(
 
     <Provider store={store}>
         <ModalState>
-                <App />
+            <App />
         </ModalState>
     </Provider>
 );
