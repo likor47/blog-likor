@@ -18,6 +18,7 @@ import {createTheme, Pagination, ThemeProvider} from '@mui/material';
 import Highlight from '../Highlighter';
 import {useGlobalState} from '../../state';
 import {darkMode, lightMode} from '../../theme'
+import Sidebar from "../Sidebar";
 
 
 const MainPage: FC = (): JSX.Element => {
@@ -47,7 +48,6 @@ const MainPage: FC = (): JSX.Element => {
         updatePost(post)
     }
 
-
     const navigate = useNavigate();
 
     const openUserPage = () => {
@@ -66,6 +66,7 @@ const MainPage: FC = (): JSX.Element => {
 
             <ThemeProvider theme={mode === 'true' ? darkMode : lightMode}>
             <div className="main">
+                <Sidebar></Sidebar>
                 <div className="container">
                 {isLoading && <Loader/>}
                 {error && <h1 className="post__error">Сталась помилка...</h1>}
